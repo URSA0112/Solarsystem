@@ -1,0 +1,38 @@
+body {
+  background-color: black;
+}
+
+.circle {
+  background-image: linear-gradient(to right, rgb(7, 88, 53), rgb(30, 7, 70), rgb(255, 0, 0));
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  justify-self: left;
+  margin-top: 300px;
+  position: relative;
+  animation-name: spin;
+  animation-duration:1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+0% {left: 10%;
+   }
+   9%{  width: 200px;
+    height: 200px;}
+10%{  }
+20%{}
+30%{}
+40%{}
+50%{left:80%;
+  }
+  55%{width: 50px;
+    height: 50px;}
+60%{}
+70%{}
+80%{}
+90%{}
+  100% {left: 10%;
+    
+  }
+}
