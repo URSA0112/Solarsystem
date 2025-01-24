@@ -1,24 +1,25 @@
 
 .orbit{
-    background-color: rgba(213, 173, 243, 0.1);
+
      position: absolute;
     width: 75%;
     height: 100%;
+    left : 11%;
+    z-index: 1;
     animation: rotate var(--duration) linear infinite;
 }
 
 .planet{
-border: solid;
 border-radius: 50%;
 display: flex;
 justify-content: center;
 align-items: center;
-width: 50%;
-height: 30%;
+width: 90%;
+height: 50%;
 
 }
 
-@keyframes rotat {
+@keyframes rotate {
     from {
       transform: rotate(0deg);
     }
@@ -28,7 +29,7 @@ height: 30%;
   }
 
 .planet-container{
-    background-color: rgba(31, 37, 225, 0.3);
+
     display: flex;
     gap:10px;
      left: 25%; right: 25%; top: 35%; 
@@ -38,38 +39,30 @@ img{
 }
 
 
-#p1{position: absolute; left: 27%; top: 35%; 
-    ;z-index: 1; }/*earth*/
-#p2{position: absolute; left: 30%; top: 35%;
-    ;z-index: 2; }/*venus*/
-#p3{position: absolute; left: 35%; top: 35%;
-    ;z-index: 3; }/*mercury*/
-#p4{position: absolute; left: 23%; top: 35%;
-    ;z-index: 4; }/*mars*/
-#p5{position: absolute; left: 20%; top: 35%;
-    ;z-index: 3; }/*jupiter*/
-#p6{position: absolute; left: 15%; top: 35%;
-    ;z-index: 6; }/*uranus*/
-#p7{position: absolute; left: 5%; top: 35%;
-    ;z-index: 7; } /*neptune*/
-#p8{position: absolute; left: 10%; top: 35%;
-    ;z-index: 8; } /*saturn*/
+#p1{position: absolute; left: 41%; top: 25%; 
+    }/*earth*/
+#p2{position: absolute; left: 44%; top: 25%;
+     }/*venus*/
+#p3{position: absolute; left: 46%; top: 25%;
+     }/*mercury*/
+#p4{position: absolute; left: 38%; top: 25%;
+     }/*mars*/
+#p5{position: absolute; left: 32%; top: 25%;
+     }/*jupiter*/
+#p6{position: absolute; left: 27%; top: 25%;
+     }/*uranus*/
+#p7{position: absolute; left: 14%; top: 25%;
+     } /*neptune*/
+#p8{position: absolute; left: 20%; top: 25%;
+     } /*saturn*/
           
 
-#img1{position: relative;left: -50%;--duration :30s; width: 15%;} /*earth*/
-#img2{position: relative;left: -50%;--duration :60s; width: 10%;} /*venus*/
-#img3{position: relative;left: -50%;--duration :60s; width: 10%;} /*mercury*/
-#img4{position: relative;left: -50%;--duration :30s; width: 10%;} /*mars*/
-#img5{position: relative;left: -50%;--duration :8s;  width: 30%;} /*jupiter*/
-#img6{position: relative;left: -50%;--duration :8s;  width: 20%;} /*uranus*/
-#img7{position: relative;left: -50%;--duration :8s;  width: 10%;} /*neptune*/
-#img8{position: relative;left: -50%;--duration :8s;  width: 30%;} /*saturn*/
+#img1{position: relative;left: -56%;--duration :30s; width: 7%;} /*earth*/
+#img2{position: relative;left: -56%;--duration :60s; width: 2.9%;} /*venus*/
+#img3{position: relative;left: -56%;--duration :60s; width: 3%;} /*mercury*/
+#img4{position: relative;left: -56%;--duration :30s; width: 3%;} /*mars*/
+#img5{position: relative;left: -56%;--duration :8s;  width: 18%;} /*jupiter*/
+#img6{position: relative;left: -56%;--duration :8s;  width: 11%;} /*uranus*/
+#img7{position: relative;left: -56%;--duration :8s;  width: 7%;} /*neptune*/
+#img8{position: relative;left: -56%;--duration :8s;  width: 19%;} /*saturn*/
 
-#mercury {width: 100%; left:0%}
-#venus {width: 100%; left :0%}
-#earth{width: 100%;  left :0%}
-#mars{width: 100%;   left :0%}
-#jupiter{width: 100%;left :0%}
-#saturn{width: 100%; left :0%}
-#uranus{width: 100%; left :0%}
-#neptune{width: 100%;left :0%}
