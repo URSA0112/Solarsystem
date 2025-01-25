@@ -26,25 +26,25 @@ body {
   bottom: 25%;
   width: 50%;
   height: auto;
-  z-index: 1;
+  z-index: -1;
 }
 
 .information-container {
+
   position: relative;
   justify-self: center;
-  width: 10%;
-  height: 10%;
   display: grid;
   grid-template-columns: repeat(4, 20vw);
   margin: 5%;
-  z-index: 10;
+  z-index: 5;
   margin-left: 10%;
   margin-top: 3%;
+  padding-left: 2%;
   
 }
 
 .info {
-  width: 10rem;
+  width: 15rem;
   height: 15rem;
   position: relative;
   justify-content: center;
@@ -56,20 +56,19 @@ body {
     0 0 10px rgba(0, 255, 255, 0.4) inset;
   color: #00ffff;
   font-family: 'Roboto Mono', monospace;
-  font-size: clamp(0.9rem, 1vw, 1rem);
-  padding-top: 12%;
+  font-size: clamp(1rem, 1vw, 1rem);
+  padding-top: 5%;
   margin: 5%;
   text-align: center;
   display: flex;  
-
-
+  
 }
 
 .info:hover {
   background: rgba(0, 0, 0, 0.8);
   box-shadow: 0 0 25px rgba(0, 255, 255, 0.9),
     0 0 15px rgba(0, 255, 255, 0.7) inset;
-  transform: scale(1.05);
+  transform: scale(1);
 }
 
 
@@ -97,9 +96,9 @@ body {
 
 @media (max-width: 1024px) {
   .info {
-    font-size: clamp(1rem, 1vw, 1rem);
+    font-size: clamp(0.8rem, 1vw, 0.9rem);
     padding: 15px;
-    height: 40vh;
+    height: 30vh;
   }
   .information-container{ font-size: clamp(0.7rem, 1vw, 1rem);
 
@@ -130,29 +129,29 @@ body {
 }
 }
 .info {
-  display: none;
+visibility: hidden;
 }
 #t1:hover ~ #info-mercury {
-  display: block;
+ visibility:visible;
 }
 #t2:hover ~ #info-venus {
-  display: block;
+ visibility:visible;
 }
 #t3:hover ~ #info-earth{
-  display: block;
+ visibility:visible;
 }
 #t4:hover ~ #info-mars {
-  display: block;
+ visibility:visible;
 }
 #t5:hover ~ #info-jupiter {
-  display: block;
+ visibility:visible;
 }
 #t6:hover ~ #info-uranus {
-  display: block;
+ visibility:visible;
 }
 #t7:hover ~ #info-saturn {
-  display: block;
+ visibility:visible;
 }
 #t8:hover ~ #info-neptune {
-  display: block;
+ visibility:visible;
 }

@@ -1,11 +1,9 @@
 
 .orbit{
-
      position: absolute;
     width: 75%;
     height: 100%;
     left : 11%;
-    z-index: 1;
     animation: rotate var(--duration) linear infinite;
 }
 
@@ -36,6 +34,8 @@ height: 50%;
 }
 img{
        animation: rotate var(--duration) linear infinite;
+
+ 
 }
 
 
@@ -59,7 +59,8 @@ img{
 
 #img1{position: relative;left: -56%;--duration :30s; width: 7%;} /*earth*/
 #img2{position: relative;left: -56%;--duration :60s; width: 2.9%;} /*venus*/
-#img3{position: relative;left: -56%;--duration :60s; width: 3%;} /*mercury*/
+#img3{position: relative;left: -56%;--duration :60s; width: 3%;
+} /*mercury*/
 #img4{position: relative;left: -56%;--duration :30s; width: 3%;} /*mars*/
 #img5{position: relative;left: -56%;--duration :8s;  width: 18%;} /*jupiter*/
 #img6{position: relative;left: -56%;--duration :8s;  width: 11%;} /*uranus*/
